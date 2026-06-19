@@ -1,0 +1,25 @@
+- type: gameMap
+  id: Box
+  mapName: 'Box Station'
+  mapPath: /Maps/box.yml
+  minPlayers: 55 # Corvax
+  stations:
+    Boxstation:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Р‘РѕРєСЃ {1}' # Corvax
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'TG'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_box.yml
+        - type: StationJobs
+          availableJobs:
+            Cowboy: [ -1, -1 ]
+            Lawman: [ 5, 5 ]
+            Sheriff: [ 1, 1 ]
+            CountySheriff: [ 1, 1 ]
+            Bandit: [ 3, 5 ]
+            Slave: [ -1, -1 ]
+            Robber: [ 1, 1 ]

@@ -1,0 +1,20 @@
+- type: job
+  id: Lawman
+  name: job-name-lawman
+  description: job-description-lawman
+  playTimeTracker: JobLawman
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 2h
+  startingGear: LawmanGear
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-sheriff
+  weight: 1
+  access:
+  - Maintenance
+
+- type: startingGear
+  id: LawmanGear
+  equipment:
+    id: PassengerPDA
+    ears: ClothingHeadsetGrey

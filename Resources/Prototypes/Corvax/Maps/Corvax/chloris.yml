@@ -1,0 +1,27 @@
+- type: gameMap
+  id: CorvaxChloris
+  mapName: 'Chloris'
+  mapPath: /Maps/Corvax/corvax_chloris.yml
+  maxRandomOffset: 0
+  randomRotation: false
+  minPlayers: 55
+  stations:
+    Chloris:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} РҐР»РѕСЂРёСЃ {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'LPK'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Corvax/Shuttles/emergency_corvaxchloris.yml
+        - type: StationJobs
+          availableJobs:
+            Cowboy: [ -1, -1 ]
+            Lawman: [ 5, 5 ]
+            Sheriff: [ 1, 1 ]
+            CountySheriff: [ 1, 1 ]
+            Bandit: [ 3, 5 ]
+            Slave: [ -1, -1 ]
+            Robber: [ 1, 1 ]

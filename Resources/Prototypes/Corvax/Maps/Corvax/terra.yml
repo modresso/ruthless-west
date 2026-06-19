@@ -1,0 +1,49 @@
+- type: gameMap
+  id: CorvaxTerra
+  mapName: 'Terra Colony'
+  mapPath: /Maps/Corvax/corvax_terra.yml
+  maxRandomOffset: 0
+  randomRotation: false
+  minPlayers: 0
+  maxPlayers: 30
+  stations:
+    Terra:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} РўРµСЂСЂР° {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'MT'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Corvax/Shuttles/corvax_emergency.yml
+        - type: StationBiome
+          biome: TerraPlanet
+          mapLightColor: "#090303FF"
+        - type: GridSpawn
+          groups:
+            trade: !type:GridSpawnGroup
+              addComponents:
+                - type: ProtectedGrid
+                - type: TradeStation
+              paths:
+                - /Maps/Shuttles/terra_trade.yml
+        - type: StationCargoShuttle
+          path: /Maps/Test/empty.yml
+        - type: StationJobs
+          availableJobs:
+            Cowboy: [ -1, -1 ]
+            Lawman: [ 5, 5 ]
+            Sheriff: [ 1, 1 ]
+            CountySheriff: [ 1, 1 ]
+            Bandit: [ 3, 5 ]
+            Slave: [ -1, -1 ]
+            Robber: [ 1, 1 ]
+        - type: StationGoal
+          goals:
+          - SolarPanels
+          - Artifacts
+          - Bank
+          - Zoo
+          - MiningOutpost
+          - Tesla

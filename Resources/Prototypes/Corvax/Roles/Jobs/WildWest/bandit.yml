@@ -1,0 +1,20 @@
+- type: job
+  id: Bandit
+  name: job-name-bandit
+  description: job-description-bandit
+  playTimeTracker: JobBandit
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 1h
+  startingGear: BanditGear
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-nobody
+  weight: 0
+  access:
+  - Maintenance
+
+- type: startingGear
+  id: BanditGear
+  equipment:
+    id: PassengerPDA
+    ears: ClothingHeadsetGrey

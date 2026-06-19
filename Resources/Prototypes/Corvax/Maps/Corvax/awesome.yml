@@ -1,0 +1,26 @@
+- type: gameMap
+  id: CorvaxAwesome
+  mapName: 'Awesome Station'
+  mapPath: /Maps/Corvax/corvax_awesome.yml 
+  minPlayers: 25
+  maxPlayers: 55
+  stations:
+    Awesome:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} РђРІРµСЃРѕРј {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'TBK'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Corvax/Shuttles/emergency_awesome.yml 
+        - type: StationJobs
+          availableJobs:
+            Cowboy: [ -1, -1 ]
+            Lawman: [ 5, 5 ]
+            Sheriff: [ 1, 1 ]
+            CountySheriff: [ 1, 1 ]
+            Bandit: [ 3, 5 ]
+            Slave: [ -1, -1 ]
+            Robber: [ 1, 1 ]

@@ -1,0 +1,20 @@
+- type: job
+  id: CountySheriff
+  name: job-name-county-sheriff
+  description: job-description-county-sheriff
+  playTimeTracker: JobCountySheriff
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 999h
+  startingGear: CountySheriffGear
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-nobody
+  weight: 3
+  access:
+  - Maintenance
+
+- type: startingGear
+  id: CountySheriffGear
+  equipment:
+    id: PassengerPDA
+    ears: ClothingHeadsetGrey

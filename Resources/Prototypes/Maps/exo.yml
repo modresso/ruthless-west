@@ -1,0 +1,28 @@
+- type: gameMap
+  id: Exo
+  mapName: 'Exo'
+  mapPath: /Maps/exo.yml
+  minPlayers: 40
+  maxPlayers: 80
+  stations:
+    Exo:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Exomorph Vessel "Conquest" EXO-{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_exo.yml
+        - type: StationCargoShuttle
+          path: /Maps/Shuttles/cargo_exo.yml
+        - type: StationJobs
+          availableJobs:
+            Cowboy: [ -1, -1 ]
+            Lawman: [ 5, 5 ]
+            Sheriff: [ 1, 1 ]
+            CountySheriff: [ 1, 1 ]
+            Bandit: [ 3, 5 ]
+            Slave: [ -1, -1 ]
+            Robber: [ 1, 1 ]

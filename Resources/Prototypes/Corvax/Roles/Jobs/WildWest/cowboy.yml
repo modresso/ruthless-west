@@ -1,0 +1,17 @@
+- type: job
+  id: Cowboy
+  name: job-name-cowboy
+  description: job-description-cowboy
+  playTimeTracker: JobCowboy
+  startingGear: CowboyGear
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-everyone
+  setPreference: true
+  access:
+  - Maintenance
+
+- type: startingGear
+  id: CowboyGear
+  equipment:
+    id: PassengerPDA
+    ears: ClothingHeadsetGrey

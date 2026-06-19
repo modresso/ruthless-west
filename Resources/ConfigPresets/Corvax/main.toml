@@ -1,0 +1,26 @@
+﻿[game]
+hostname = "🛰️ Ruthless West — Main 🚀⚡[TTS]"
+desc = "Ruthless West — Wild West server in Space Station 14.\n⚡ More content, opportunities and interaction!\nReduced RP requirements.\nTTS (Text-To-Speech) integration."
+maxplayers = 190
+soft_max_players = 105
+map_rotation = true
+
+[server]
+rules_file = "CorvaxLRPRuleset"
+lobby_name = "️🛰️ Ruthless West — Main 🚀⚡"
+
+[game.panic_bunker]
+enabled = true
+show_reason = true
+min_account_age = 0
+min_overall_minutes = 0
+deny_vpn = true
+enable_without_admins = true
+disable_with_admins = true
+
+[rules]
+time = 180.0
+
+[hub]
+advertise = true
+tags = "lang:ru,rp:low,rp:med,region:eu_e,tts"

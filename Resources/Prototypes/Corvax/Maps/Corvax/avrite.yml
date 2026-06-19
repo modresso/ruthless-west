@@ -1,0 +1,27 @@
+- type: gameMap
+  id: CorvaxAvrite
+  mapName: 'Avrite Station'
+  mapPath: /Maps/Corvax/corvax_avrite.yml
+  maxRandomOffset: 0
+  randomRotation: false
+  minPlayers: 55
+  stations:
+    Avrite:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} РђРІСЂРёС‚ {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'SY'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Corvax/Shuttles/emergency_corvaxavrite.yml
+        - type: StationJobs
+          availableJobs:
+            Cowboy: [ -1, -1 ]
+            Lawman: [ 5, 5 ]
+            Sheriff: [ 1, 1 ]
+            CountySheriff: [ 1, 1 ]
+            Bandit: [ 3, 5 ]
+            Slave: [ -1, -1 ]
+            Robber: [ 1, 1 ]

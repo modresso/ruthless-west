@@ -1,0 +1,16 @@
+- type: job
+  id: Slave
+  name: job-name-slave
+  description: job-description-slave
+  playTimeTracker: JobSlave
+  startingGear: SlaveGear
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-everyone
+  access:
+  - Maintenance
+
+- type: startingGear
+  id: SlaveGear
+  equipment:
+    id: PassengerPDA
+    ears: ClothingHeadsetGrey

@@ -1,0 +1,25 @@
+﻿[game]
+hostname = "🛰️ Ruthless West — Elysium 🌑[TTS]"
+desc = "Ruthless West — Wild West server in Space Station 14.\nBeginners welcome!\nReduced RP requirements with common MRP rules.\nTTS (Text-To-Speech) integration."
+maxplayers = 180
+soft_max_players = 100
+map_rotation = true
+
+[server]
+lobby_name = "️🛰️ Ruthless West — Elysium 🌑"
+
+[game.panic_bunker]
+enabled = true
+show_reason = true
+min_account_age = 0
+min_overall_minutes = 0
+deny_vpn = true
+enable_without_admins = true
+disable_with_admins = true
+
+[rules]
+time = 180.0
+
+[hub]
+advertise = true
+tags = "lang:ru,rp:low,rp:med,region:eu_e,tts"

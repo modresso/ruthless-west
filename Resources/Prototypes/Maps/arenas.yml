@@ -1,0 +1,40 @@
+- type: gameMap
+  id: MeteorArena
+  mapName: Meteor Arena
+  mapPath: /Maps/Nonstations/meteor-arena.yml
+  minPlayers: 0
+  stations:
+    Arena:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Meteor Arena"
+        - type: StationJobs
+          availableJobs:
+            Cowboy: [ -1, -1 ]
+            Lawman: [ 5, 5 ]
+            Sheriff: [ 1, 1 ]
+            CountySheriff: [ 1, 1 ]
+            Bandit: [ 3, 5 ]
+            Slave: [ -1, -1 ]
+            Robber: [ 1, 1 ]
+- type: gameMap
+  id: dm01-entryway
+  mapName: DM01 Entryway
+  mapPath: /Maps/Nonstations/dm01-entryway.yml
+  minPlayers: 0
+  stations:
+    dm01-entryway:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "DM01 Entryway"
+        - type: StationJobs
+          availableJobs:
+            Cowboy: [ -1, -1 ]
+            Lawman: [ 5, 5 ]
+            Sheriff: [ 1, 1 ]
+            CountySheriff: [ 1, 1 ]
+            Bandit: [ 3, 5 ]
+            Slave: [ -1, -1 ]
+            Robber: [ 1, 1 ]

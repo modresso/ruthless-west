@@ -1,0 +1,20 @@
+- type: department
+  id: Law
+  name: department-Law
+  description: department-Law-description
+  color: "#334E6D"
+  roles:
+  - Cowboy
+  - Lawman
+  - Sheriff
+  - CountySheriff
+
+- type: department
+  id: Outlaw
+  name: department-Outlaw
+  description: department-Outlaw-description
+  color: "#DE3A3A"
+  roles:
+  - Bandit
+  - Slave
+  - Robber

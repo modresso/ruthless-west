@@ -1,0 +1,33 @@
+﻿[game]
+hostname = "🛰️ Ruthless West — Whitelist ☕[TTS]"
+desc = "Ruthless West — Wild West server in Space Station 14 with high RP and whitelist access.\nContact us in Discord for access!"
+maxplayers = 80
+soft_max_players = 70
+map_rotation = true
+role_timers = false
+
+[server]
+lobby_name = "️🛰️ Ruthless West — Whitelist ☕"
+
+[atmos]
+space_wind = true
+
+[biomass]
+easy_mode = false
+
+[rules]
+time = 10.0
+
+[whitelist]
+enabled = true
+
+[ic]
+flavor_text = true
+punctuation = true
+
+[shuttle]
+auto_call_time = 0
+
+[hub]
+advertise = true
+tags = "lang:ru,rp:high,region:eu_e,tts"
